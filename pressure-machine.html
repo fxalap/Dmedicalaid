@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IML ডিজিটাল প্রেসার মেশিন | Digital Medical Aid (DMA)</title>
+  <meta name="description" content="IML ডিজিটাল রক্তচাপ মাপার মেশিন সাথে ফ্রি ডিজিটাল থার্মোমিটার। ২ বছরের গ্যারান্টি ও ক্যাশ অন ডেলিভারি।">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --dma-blue: #0b2275;
+      --dma-blue-dark: #07164f;
+      --accent: #e65100;
+      --accent-hover: #c74300;
+      --primary: #076254;
+      --text-main: #141f1d;
+      --text-muted: #526360;
+      --bg-page: #f6f9f8;
+      --border: #d5e5e0;
+      --radius-md: 14px;
+      --radius-sm: 8px;
+      --font-family: 'Noto Sans Bengali', -apple-system, sans-serif;
+    }
+    body {
+      font-family: var(--font-family);
+      background: var(--bg-page);
+      color: var(--text-main);
+      line-height: 1.55;
+      overflow-x: hidden;
+      padding-bottom: 70px;
+    }
+    @media (min-width: 992px) { body { padding-bottom: 0; } }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+    .container { width: 100%; max-width: 1140px; margin: 0 auto; padding: 0 16px; }
+
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      gap: 8px; min-height: 52px; padding: 12px 24px; font-size: 1.1rem;
+      font-weight: 800; border-radius: var(--radius-md); border: none; cursor: pointer;
+      transition: 0.2s ease;
+    }
+    .btn-primary { background: linear-gradient(135deg, #e65100, #c43f00); color: #fff; box-shadow: 0 4px 14px rgba(230,81,0,0.35); }
+    .btn-primary:hover { background: linear-gradient(135deg, #cf4300, #ab3200); }
+    .btn-block { width: 100%; }
+
+    .top-strip { background: var(--dma-blue-dark); color: #fff; text-align: center; padding: 6px; font-size: 0.85rem; font-weight: 700; }
+    .site-header { background: #fff; border-bottom: 2px solid var(--border); padding: 10px 0; position: sticky; top: 0; z-index: 100; }
+    .header-layout { display: flex; align-items: center; justify-content: space-between; }
+    .brand-wrap { display: flex; align-items: center; gap: 10px; }
+    .dma-logo-svg { width: 78px; height: 48px; }
+    .brand-title { font-size: 1.25rem; font-weight: 900; color: var(--dma-blue); line-height: 1.15; }
+    .header-call { background: #eef3ff; border: 1.5px solid var(--dma-blue); color: var(--dma-blue); padding: 8px 14px; border-radius: 50px; font-weight: 800; }
+
+    .hero-box { background: #fff; border: 1px solid var(--border); border-radius: var(--radius-md); padding: 18px; margin: 1.5rem 0; box-shadow: 0 4px 16px rgba(0,0,0,0.05); }
+    @media (min-width: 860px) { .hero-grid { display: grid; grid-template-columns: 1fr 1.15fr; gap: 2rem; align-items: center; } }
+    .hero-img-box { background: radial-gradient(circle, #f5faf8, #e7f2ed); border-radius: var(--radius-md); padding: 20px; text-align: center; }
+    .hero-img { max-height: 280px; margin: 0 auto; object-fit: contain; }
+
+    .price-tag { background: #fff4ec; border-left: 5px solid var(--accent); padding: 10px 16px; margin: 12px 0; display: flex; align-items: baseline; gap: 10px; }
+    .price-num { font-size: 2rem; font-weight: 900; color: var(--accent); }
+
+    .feature-list { list-style: none; margin: 14px 0 20px; display: flex; flex-direction: column; gap: 8px; }
+    .feature-list li { font-size: 1.05rem; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+    .feature-list li span { color: var(--primary); font-size: 1.2rem; }
+
+    /* Order Section */
+    .order-section { padding: 2rem 0; background: linear-gradient(180deg, var(--bg-page), #eaf2ef); }
+    .order-card { background: #fff; border: 3px solid var(--dma-blue); border-radius: var(--radius-md); padding: 24px; box-shadow: 0 8px 24px rgba(11,34,117,0.1); max-width: 760px; margin: 0 auto; }
+    .f-group { margin-bottom: 16px; }
+    .f-label { display: block; font-size: 1.05rem; font-weight: 800; color: var(--dma-blue-dark); margin-bottom: 6px; }
+    .f-input, .f-textarea { width: 100%; min-height: 50px; padding: 12px 16px; font-size: 1.05rem; font-family: inherit; border: 2px solid var(--border); border-radius: var(--radius-sm); }
+    .f-input:focus, .f-textarea:focus { border-color: var(--dma-blue); outline: none; }
+    .f-textarea { min-height: 80px; resize: vertical; }
+
+    .del-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .del-btn { border: 2px solid var(--border); border-radius: var(--radius-sm); padding: 10px; text-align: center; cursor: pointer; background: #fafafa; }
+    .del-btn.selected { border-color: var(--dma-blue); background: #eef3ff; font-weight: 800; }
+
+    .receipt-box { background: #f8fafc; border: 2px dashed #94a3b8; border-radius: var(--radius-sm); padding: 16px; margin: 16px 0; }
+    .receipt-row { display: flex; justify-content: space-between; font-size: 1.05rem; margin-bottom: 6px; }
+    .receipt-row.total { font-size: 1.5rem; font-weight: 900; color: var(--accent); border-top: 2px solid #cbd5e1; padding-top: 10px; margin-top: 10px; }
+
+    .site-footer { background: var(--dma-blue-dark); color: #cbd5e1; padding: 2rem 0; text-align: center; }
+  </style>
+</head>
+<body>
+
+  <div class="top-strip">
+    ✓ ক্যাশ অন ডেলিভারি | ২ বছরের গ্যারান্টি | হটলাইন: 01996365491
+  </div>
+
+  <header class="site-header">
+    <div class="container header-layout">
+      <a href="index.html" class="brand-wrap">
+        <svg class="dma-logo-svg" viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="120" cy="70" rx="114" ry="60" fill="none" stroke="#D8232A" stroke-width="4.5"/>
+          <ellipse cx="120" cy="70" rx="110" ry="56" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+          <ellipse cx="120" cy="70" rx="108" ry="54" fill="#0B2275"/>
+          <g fill="#FFFFFF">
+            <path d="M42 42 H76 C94 42 102 54 102 70 C102 86 94 98 76 98 H42 V42 Z"/>
+            <path d="M58 54 H72 C80 54 86 60 86 70 C86 80 80 86 72 86 H58 V54 Z" fill="#0B2275"/>
+            <circle cx="68" cy="65" r="7" stroke="#FFFFFF" stroke-width="3" fill="none"/>
+            <path d="M68 72 V82 M64 82 H72" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="68" cy="65" r="2.5" fill="#FFFFFF"/>
+            <path d="M106 42 H122 L136 68 L150 42 H166 V98 H152 V64 L139 88 H133 L120 64 V98 H106 V42 Z"/>
+            <path d="M184 42 H198 L218 98 H203 L199 84 H183 L179 98 H164 L184 42 Z M186 73 H196 L191 58 L186 73 Z"/>
+          </g>
+          <text x="214" y="32" font-family="-apple-system, sans-serif" font-size="14" font-weight="900" fill="#333333">TM</text>
+        </svg>
+        <span class="brand-title">Digital Medical Aid</span>
+      </a>
+
+      <a href="tel:01996365491" class="header-call">📞 01996365491</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="hero-box">
+      <div class="hero-grid">
+        <div class="hero-img-box">
+          <img src="https://dmedicalaid.com/wp-content/uploads/2026/08/bf104c20-955d-45d8-9187-0ab18965a00e-300x300.webp" alt="IML ডিজিটাল প্রেসার মেশিন" class="hero-img" onerror="this.src='https://dmedicalaid.com/wp-content/uploads/2026/04/fae65019-cee4-4355-ae30-58d47f34a6c8-1.jpg';">
+        </div>
+        <div>
+          <h1 style="font-size: 1.8rem; font-weight: 900; color: var(--dma-blue-dark);">IML ডিজিটাল ব্লাড প্রেসার মেশিন + ডিজিটাল থার্মোমিটার</h1>
+          <div class="price-tag">
+            <span class="price-num">৳ ১,৪৯০</span>
+            <span style="color:var(--text-muted); font-weight:700;">(সাথে ডিজিটাল থার্মোমিটার সম্পূর্ণ ফ্রি!)</span>
+          </div>
+          <ul class="feature-list">
+            <li><span>✓</span> এক ক্লিকেই রক্তচাপ ও পালস রেট নিখুঁত পরিমাপ</li>
+            <li><span>✓</span> বড় এলসিডি ডিসপ্লে — বয়স্কদের দেখতে কোনো কষ্ট হয় না</li>
+            <li><span>✓</span> পূর্ববর্তী রিডিং মেমোরিতে স্বয়ংক্রিয়ভাবে জমা থাকে</li>
+            <li><span>✓</span> ২ বছরের অফিসিয়াল রিপ্লেসমেন্ট গ্যারান্টি সুবিধা</li>
+          </ul>
+          <a href="#order-form" class="btn btn-primary btn-block">অর্ডার করতে নিচে ফর্ম পূরণ করুন</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="order-section" id="order-form">
+    <div class="container">
+      <div class="order-card">
+        <h2 style="text-align: center; color: var(--dma-blue-dark); font-weight: 900; margin-bottom: 14px;">অর্ডার ফর্ম পূরণ করুন</h2>
+        <p style="text-align: center; color: var(--text-muted); margin-bottom: 20px;">ক্যাশ অন ডেলিভারি (পণ্য হাতে পেয়ে দেখে টাকা দিন)</p>
+
+        <form onsubmit="handleBpOrder(event)">
+          <div class="f-group">
+            <label class="f-label">পণ্য: IML প্রেসার মেশিন + ফ্রি থার্মোমিটার (৳ ১,৪৯০)</label>
+          </div>
+
+          <div class="f-group">
+            <label class="f-label">ডেলিভারি এলাকা নির্বাচন করুন:</label>
+            <div class="del-grid">
+              <div class="del-btn selected" id="bpIn" onclick="setBpDel(60, 'in')">
+                ঢাকার ভেতরে (৬০ টাকা)
+              </div>
+              <div class="del-btn" id="bpOut" onclick="setBpDel(120, 'out')">
+                ঢাকার বাইরে (১২০ টাকা)
+              </div>
+            </div>
+          </div>
+
+          <div class="f-group">
+            <label class="f-label">আপনার নাম *</label>
+            <input type="text" id="bpName" class="f-input" placeholder="যেমন: মোঃ রফিকুল ইসলাম" required>
+          </div>
+
+          <div class="f-group">
+            <label class="f-label">মোবাইল নম্বর *</label>
+            <input type="tel" id="bpPhone" class="f-input" placeholder="যেমন: 017XXXXXXXX" maxlength="11" required>
+          </div>
+
+          <div class="f-group">
+            <label class="f-label">সম্পূর্ণ ঠিকানা *</label>
+            <textarea id="bpAddress" class="f-textarea" placeholder="বাসা/রোড নম্বর, এলাকা, থানা ও জেলা লিখুন" required></textarea>
+          </div>
+
+          <div class="receipt-box">
+            <div class="receipt-row"><span>পণ্য মূল্য:</span><span>৳ ১,৪৯০</span></div>
+            <div class="receipt-row"><span>ডেলিভারি চার্জ:</span><span id="bpDelVal">৳ ৬০</span></div>
+            <div class="receipt-row total"><span>সর্বমোট প্রদেয়:</span><span id="bpTotalVal">৳ ১,৫৫০</span></div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">✓ অর্ডার কনফার্ম করুন</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p style="font-weight: 800; color: #fff;">Digital Medical Aid (DMA) | হটলাইন: 01996365491</p>
+      <p style="margin-top: 6px; font-size: 0.9rem;">৩২/১, উত্তর পীরেরবাগ, ৬০ ফিট, মিরপুর-২, ঢাকা ১২১৬</p>
+    </div>
+  </footer>
+
+  <script>
+    let bpShipping = 60;
+    function setBpDel(cost, type) {
+      bpShipping = cost;
+      document.getElementById('bpIn').classList.toggle('selected', type === 'in');
+      document.getElementById('bpOut').classList.toggle('selected', type === 'out');
+      document.getElementById('bpDelVal').textContent = `৳ ${cost === 60 ? '৬০' : '১২০'}`;
+      document.getElementById('bpTotalVal').textContent = `৳ ${cost === 60 ? '১,৫৫০' : '১,৬১০'}`;
+    }
+    function handleBpOrder(e) {
+      e.preventDefault();
+      const name = document.getElementById('bpName').value;
+      const phone = document.getElementById('bpPhone').value;
+      alert(`ধন্যবাদ ${name}! আপনার প্রেসার মেশিনের অর্ডারটি গ্রহণ করা হয়েছে। হটলাইন 01996365491 থেকে শীঘ্রই আপনার নম্বর (${phone})-এ কল করা হবে।`);
+    }
+  </script>
+</body>
+</html>

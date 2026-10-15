@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Medical Aid (DMA) | বিশ্বস্ত মেডিকেল ইকুইপমেন্ট শপ</title>
+  <meta name="description" content="Digital Medical Aid (DMA) - ঘরে বসেই ডায়াবেটিস মেশিন, প্রেসার মেশিন, ওয়েট স্কেল সহ আসল মেডিকেল সামগ্রী কিনুন ক্যাশ অন ডেলিভারিতে।">
+
+  <!-- Google Noto Sans Bengali Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       CSS Variables & Global Styles
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --dma-blue: #0b2275;
+      --dma-blue-dark: #07164f;
+      --dma-red: #d8232a;
+      --primary: #076254;
+      --primary-light: #eef7f4;
+      --accent: #e65100;
+      --accent-hover: #cf4300;
+      --gold: #f59e0b;
+      --text-main: #141f1d;
+      --text-muted: #526360;
+      --bg-page: #f6f9f8;
+      --bg-card: #ffffff;
+      --border: #d5e5e0;
+      --success: #15803d;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --font-family: 'Noto Sans Bengali', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-family);
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+      padding-bottom: 70px;
+    }
+
+    @media (min-width: 992px) {
+      body {
+        padding-bottom: 0;
+      }
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 48px;
+      padding: 12px 22px;
+      font-size: 1.05rem;
+      font-weight: 800;
+      font-family: inherit;
+      border-radius: var(--radius-sm);
+      border: none;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.2s ease;
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #e65100 0%, #c43f00 100%);
+      color: #ffffff;
+      box-shadow: 0 4px 12px rgba(230, 81, 0, 0.3);
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #cf4300 0%, #ab3200 100%);
+      color: #ffffff;
+    }
+
+    .btn-block {
+      width: 100%;
+    }
+
+    /* Top Trust Strip */
+    .top-strip {
+      background: linear-gradient(90deg, #07164f 0%, #0b2275 100%);
+      color: #ffffff;
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 7px 0;
+      text-align: center;
+    }
+
+    .top-strip-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+    }
+
+    /* Header */
+    .site-header {
+      background: #ffffff;
+      border-bottom: 2px solid var(--border);
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+
+    .header-layout {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .brand-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    /* DMA Exact SVG Logo */
+    .dma-logo-svg {
+      width: 76px;
+      height: 46px;
+      flex-shrink: 0;
+    }
+
+    @media (min-width: 768px) {
+      .dma-logo-svg {
+        width: 86px;
+        height: 52px;
+      }
+    }
+
+    .brand-text-col {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-title {
+      font-size: 1.25rem;
+      font-weight: 900;
+      color: var(--dma-blue);
+      line-height: 1.15;
+    }
+
+    .brand-sub {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .header-hotline-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #eef3ff;
+      border: 1.5px solid var(--dma-blue);
+      color: var(--dma-blue);
+      padding: 8px 14px;
+      border-radius: 50px;
+      font-size: 0.95rem;
+      font-weight: 800;
+      transition: all 0.2s ease;
+    }
+
+    .header-hotline-btn:hover {
+      background: var(--dma-blue);
+      color: #ffffff;
+    }
+
+    /* Hero Banner */
+    .hero-banner {
+      background: linear-gradient(135deg, #0b2275 0%, #07164f 100%);
+      color: #ffffff;
+      padding: 2.5rem 0 2.2rem;
+      position: relative;
+    }
+
+    .hero-banner-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.8rem;
+      align-items: center;
+    }
+
+    @media (min-width: 800px) {
+      .hero-banner-grid {
+        grid-template-columns: 1.2fr 0.9fr;
+      }
+    }
+
+    .hero-tag {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 4px 14px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .hero-heading {
+      font-size: 2rem;
+      font-weight: 900;
+      line-height: 1.3;
+      margin-bottom: 12px;
+    }
+
+    @media (min-width: 768px) {
+      .hero-heading {
+        font-size: 2.4rem;
+      }
+    }
+
+    .hero-desc {
+      font-size: 1.05rem;
+      color: #e2eaf8;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn-hero-white {
+      background: #ffffff;
+      color: var(--dma-blue);
+      font-weight: 800;
+      padding: 12px 24px;
+      border-radius: var(--radius-sm);
+    }
+
+    .btn-hero-white:hover {
+      background: #f0f4ff;
+    }
+
+    .hero-banner-img-box {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius-lg);
+      padding: 16px;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .hero-banner-img {
+      max-height: 260px;
+      margin: 0 auto;
+      object-fit: contain;
+      filter: drop-shadow(0 8px 16px rgba(0,0,0,0.25));
+    }
+
+    /* Trust Features Bar */
+    .features-strip {
+      background: #ffffff;
+      border-bottom: 1px solid var(--border);
+      padding: 18px 0;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    @media (min-width: 768px) {
+      .features-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .feat-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .feat-icon {
+      font-size: 1.8rem;
+    }
+
+    .feat-title {
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: var(--dma-blue-dark);
+      line-height: 1.2;
+    }
+
+    .feat-sub {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* Products Section */
+    .products-section {
+      padding: 2.5rem 0;
+    }
+
+    .section-title-wrap {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .main-sec-title {
+      font-size: 1.85rem;
+      font-weight: 900;
+      color: var(--dma-blue-dark);
+    }
+
+    .main-sec-sub {
+      font-size: 1rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+
+    @media (min-width: 580px) {
+      .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 900px) {
+      .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .product-card {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.25s ease;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      position: relative;
+    }
+
+    .product-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(11, 34, 117, 0.12);
+      border-color: var(--dma-blue);
+    }
+
+    .p-badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: var(--dma-blue);
+      color: #ffffff;
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 3px 10px;
+      border-radius: 50px;
+      z-index: 2;
+    }
+
+    .p-badge-hot {
+      background: var(--accent);
+    }
+
+    .p-img-box {
+      background: radial-gradient(circle, #f5faf8 0%, #e8f3ef 100%);
+      padding: 16px;
+      text-align: center;
+      height: 210px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .p-img {
+      max-height: 180px;
+      max-width: 100%;
+      object-fit: contain;
+      transition: transform 0.2s ease;
+    }
+
+    .product-card:hover .p-img {
+      transform: scale(1.04);
+    }
+
+    .p-details {
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+
+    .p-name {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--dma-blue-dark);
+      line-height: 1.35;
+      margin-bottom: 6px;
+    }
+
+    .p-rating {
+      color: var(--gold);
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+    }
+
+    .p-price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .p-price {
+      font-size: 1.55rem;
+      font-weight: 900;
+      color: var(--accent);
+    }
+
+    .p-old-price {
+      font-size: 0.95rem;
+      color: #94a3b8;
+      text-decoration: line-through;
+    }
+
+    /* Testimonials */
+    .review-strip-sec {
+      background: #ffffff;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 2.2rem 0;
+    }
+
+    .rev-row {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    @media (min-width: 700px) {
+      .rev-row {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .rev-card {
+      background: var(--bg-page);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 16px;
+    }
+
+    .rev-author {
+      font-weight: 800;
+      color: var(--dma-blue-dark);
+      margin-top: 8px;
+      font-size: 0.9rem;
+    }
+
+    /* Footer */
+    .site-footer {
+      background: var(--dma-blue-dark);
+      color: #e2e8f0;
+      padding: 2.5rem 0 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.8rem;
+    }
+
+    @media (min-width: 700px) {
+      .footer-grid {
+        grid-template-columns: 1.2fr 0.8fr 1fr;
+      }
+    }
+
+    .footer-heading {
+      font-size: 1.25rem;
+      font-weight: 900;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    .footer-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .footer-phone-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.12);
+      padding: 8px 18px;
+      border-radius: 50px;
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 1.1rem;
+      margin: 10px 0;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      margin-top: 2rem;
+      padding-top: 1.2rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #94a3b8;
+    }
+
+    /* Sticky Mobile Navigation */
+    .mobile-nav-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #ffffff;
+      border-top: 2px solid var(--border);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 8px 0;
+      z-index: 999;
+      box-shadow: 0 -3px 12px rgba(0,0,0,0.1);
+    }
+
+    @media (min-width: 992px) {
+      .mobile-nav-bar {
+        display: none;
+      }
+    }
+
+    .mob-nav-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--dma-blue-dark);
+      text-decoration: none;
+      gap: 3px;
+    }
+
+    .mob-nav-item span.icon {
+      font-size: 1.25rem;
+    }
+
+    /* Floating WhatsApp Button */
+    .whatsapp-float {
+      position: fixed;
+      right: 18px;
+      bottom: 80px;
+      background: #25d366;
+      color: #ffffff;
+      padding: 10px 16px;
+      border-radius: 50px;
+      font-weight: 800;
+      font-size: 0.95rem;
+      box-shadow: 0 4px 16px rgba(37, 211, 102, 0.4);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      z-index: 99;
+    }
+
+    @media (min-width: 992px) {
+      .whatsapp-float {
+        bottom: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Strip -->
+  <div class="top-strip">
+    <div class="container">
+      <div class="top-strip-content">
+        <span>✓ সারা দেশে হোম ডেলিভারি</span>
+        <span>✓ ক্যাশ অন ডেলিভারি (পণ্য পেয়ে টাকা দিন)</span>
+        <span>✓ হটলাইন: 01996365491</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-layout">
+        
+        <a href="index.html" class="brand-wrap">
+          <!-- DMA Official Scalable Vector Logo -->
+          <svg class="dma-logo-svg" viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="DMA Logo">
+            <ellipse cx="120" cy="70" rx="114" ry="60" fill="none" stroke="#D8232A" stroke-width="4.5"/>
+            <ellipse cx="120" cy="70" rx="110" ry="56" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+            <ellipse cx="120" cy="70" rx="108" ry="54" fill="#0B2275"/>
+            <g fill="#FFFFFF">
+              <path d="M42 42 H76 C94 42 102 54 102 70 C102 86 94 98 76 98 H42 V42 Z" fill="#FFFFFF"/>
+              <path d="M58 54 H72 C80 54 86 60 86 70 C86 80 80 86 72 86 H58 V54 Z" fill="#0B2275"/>
+              <circle cx="68" cy="65" r="7" stroke="#FFFFFF" stroke-width="3" fill="none"/>
+              <path d="M68 72 V82 M64 82 H72" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="68" cy="65" r="2.5" fill="#FFFFFF"/>
+              <path d="M106 42 H122 L136 68 L150 42 H166 V98 H152 V64 L139 88 H133 L120 64 V98 H106 V42 Z"/>
+              <path d="M184 42 H198 L218 98 H203 L199 84 H183 L179 98 H164 L184 42 Z M186 73 H196 L191 58 L186 73 Z"/>
+            </g>
+            <text x="214" y="32" font-family="-apple-system, sans-serif" font-size="14" font-weight="900" fill="#333333">TM</text>
+          </svg>
+
+          <div class="brand-text-col">
+            <span class="brand-title">Digital Medical Aid</span>
+            <span class="brand-sub">আপনার বিশ্বস্ত স্বাস্থ্যসঙ্গী</span>
+          </div>
+        </a>
+
+        <div class="header-right">
+          <a href="tel:01996365491" class="header-hotline-btn">
+            <span>📞 01996365491</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+      <div class="container">
+        <div class="hero-banner-grid">
+          
+          <div>
+            <span class="hero-tag">অরিজিনাল মেডিকেল ইকুইপমেন্ট</span>
+            <h1 class="hero-heading">ঘরে বসেই পরিবারের নিয়মিত স্বাস্থ্য পরীক্ষা করুন সহজে</h1>
+            <p class="hero-desc">
+              ফার্মেসি বা ক্লিনিকে লাইন ধরার ঝামেলা ছাড়া এখন নিজেই ঘরে বসে ডায়াবেটিস ও ব্লাড প্রেসার পরিমাপ করুন। ডিজিটাল মেডিকেল এইড থেকে শতভাগ আসল পণ্য সংগ্রহ করুন।
+            </p>
+            <div class="hero-actions">
+              <a href="#products" class="btn btn-primary" style="min-height: 50px;">
+                🛒 সব পণ্য দেখুন
+              </a>
+              <a href="diabetis-machine.html" class="btn btn-hero-white">
+                🩸 ডায়াবেটিস মেশিন অফার
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-banner-img-box">
+            <img 
+              src="https://dmedicalaid.com/wp-content/uploads/2026/04/fae65019-cee4-4355-ae30-58d47f34a6c8-1.jpg" 
+              alt="PCL Care Diabetes Machine" 
+              class="hero-banner-img"
+              onerror="this.src='https://dmedicalaid.com/wp-content/uploads/2023/07/1.png';"
+            >
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Features Strip -->
+    <section class="features-strip">
+      <div class="container">
+        <div class="features-grid">
+          <div class="feat-item">
+            <span class="feat-icon">🚚</span>
+            <div>
+              <div class="feat-title">ক্যাশ অন ডেলিভারি</div>
+              <div class="feat-sub">পণ্য হাতে পেয়ে দেখে টাকা দিন</div>
+            </div>
+          </div>
+          <div class="feat-item">
+            <span class="feat-icon">🛡️</span>
+            <div>
+              <div class="feat-title">২ বছরের ওয়ারেন্টি</div>
+              <div class="feat-sub">রিপ্লেসমেন্ট গ্যারান্টি সুবিধা</div>
+            </div>
+          </div>
+          <div class="feat-item">
+            <span class="feat-icon">💯</span>
+            <div>
+              <div class="feat-title">১০০% আসল প্রোডাক্ট</div>
+              <div class="feat-sub">ল্যাব টেস্টেড মেডিকেল গ্রেড</div>
+            </div>
+          </div>
+          <div class="feat-item">
+            <span class="feat-icon">📞</span>
+            <div>
+              <div class="feat-title">২৪/৭ কাস্টমার সাপোর্ট</div>
+              <div class="feat-sub">কল: 01996365491</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Showcase Section -->
+    <section class="products-section" id="products">
+      <div class="container">
+        
+        <div class="section-title-wrap">
+          <h2 class="main-sec-title">আমাদের জনপ্রিয় মেডিকেল প্রোডাক্টসমূহ</h2>
+          <p class="main-sec-sub">আপনার পরিবারের জন্য সঠিক ও নির্ভরযোগ্য পণ্যটি বেছে নিন</p>
+        </div>
+
+        <div class="products-grid">
+          
+          <!-- Product 1: PCL Care Diabetes Machine (Direct link to landing page) -->
+          <div class="product-card">
+            <span class="p-badge p-badge-hot">হট সেলিং 🔥</span>
+            <div class="p-img-box">
+              <img 
+                src="https://dmedicalaid.com/wp-content/uploads/2026/04/fae65019-cee4-4355-ae30-58d47f34a6c8-1.jpg" 
+                alt="PCL Care ডায়াবেটিস মেশিন" 
+                class="p-img"
+                onerror="this.src='https://dmedicalaid.com/wp-content/uploads/2023/07/1.png';"
+              >
+            </div>
+            <div class="p-details">
+              <div>
+                <h3 class="p-name">PCL Care ডায়াবেটিস মাপার মেশিন (সম্পূর্ণ সেট)</h3>
+                <div class="p-rating">★★★★★ (৯৮টি রিভিউ)</div>
+                <div class="p-price-row">
+                  <span class="p-price">৳ ৭৯০</span>
+                  <span class="p-old-price">৳ ৯৫০</span>
+                </div>
+              </div>
+              <a href="diabetis-machine.html" class="btn btn-primary btn-block">
+                অর্ডার করতে ক্লিক করুন
+              </a>
+            </div>
+          </div>
+
+          <!-- Product 2: IML Blood Pressure Machine -->
+          <div class="product-card">
+            <span class="p-badge">জনপ্রিয়</span>
+            <div class="p-img-box">
+              <img 
+                src="https://dmedicalaid.com/wp-content/uploads/2026/08/bf104c20-955d-45d8-9187-0ab18965a00e-300x300.webp" 
+                alt="IML প্রেসার মেশিন" 
+                class="p-img"
+                onerror="this.src='https://dmedicalaid.com/wp-content/uploads/2026/02/thermo-meter2.jpg';"
+              >
+            </div>
+            <div class="p-details">
+              <div>
+                <h3 class="p-name">IML ডিজিটাল প্রেসার মেশিন + ডিজিটাল থার্মোমিটার</h3>
+                <div class="p-rating">★★★★★ (৭৪টি রিভিউ)</div>
+                <div class="p-price-row">
+                  <span class="p-price">৳ ১,৪৯০</span>
+                  <span class="p-old-price">৳ ১,৭৫০</span>
+                </div>
+              </div>
+              <a href="diabetis-machine.html#order-section" class="btn btn-primary btn-block">
+                অর্ডার করতে ক্লিক করুন
+              </a>
+            </div>
+          </div>
+
+          <!-- Product 3: IML Weight Scale + Thermometer -->
+          <div class="product-card">
+            <span class="p-badge">সাশ্রয়ী অফার</span>
+            <div class="p-img-box">
+              <img 
+                src="https://dmedicalaid.com/wp-content/uploads/2026/02/thermo-meter2.jpg" 
+                alt="IML Digital Weight Scale" 
+                class="p-img"
+                onerror="this.src='https://dmedicalaid.com/wp-content/uploads/2023/07/1.png';"
+              >
+            </div>
+            <div class="p-details">
+              <div>
+                <h3 class="p-name">IML ডিজিটাল ওয়েট স্কেল (ওজন মাপার মেশিন) + থার্মোমিটার</h3>
+                <div class="p-rating">★★★★★ (৫২টি রিভিউ)</div>
+                <div class="p-price-row">
+                  <span class="p-price">৳ ১,৩৯০</span>
+                  <span class="p-old-price">৳ ১,৫৫০</span>
+                </div>
+              </div>
+              <a href="diabetis-machine.html#order-section" class="btn btn-primary btn-block">
+                অর্ডার করতে ক্লিক করুন
+              </a>
+            </div>
+          </div>
+
+          <!-- Product 4: Mini Exercise Cycle -->
+          <div class="product-card">
+            <span class="p-badge">ডায়াবেটিস থেরাপি</span>
+            <div class="p-img-box">
+              <img 
+                src="https://dmedicalaid.com/wp-content/uploads/2025/08/WhatsApp-Image-2025-08-03-at-7.53.48-AM-1.jpeg" 
+                alt="Mini Exercise Cycle" 
+                class="p-img"
+                onerror="this.src='https://dmedicalaid.com/wp-content/uploads/2026/04/fae65019-cee4-4355-ae30-58d47f34a6c8-1.jpg';"
+              >
+            </div>
+            <div class="p-details">
+              <div>
+                <h3 class="p-name">মিনি এক্সারসাইজ সাইকেল (হাত ও পায়ের ব্যায়ামের জন্য)</h3>
+                <div class="p-rating">★★★★★ (৬৩টি রিভিউ)</div>
+                <div class="p-price-row">
+                  <span class="p-price">৳ ২,১৯০</span>
+                  <span class="p-old-price">৳ ২,৫০০</span>
+                </div>
+              </div>
+              <a href="diabetis-machine.html#order-section" class="btn btn-primary btn-block">
+                অর্ডার করতে ক্লিক করুন
+              </a>
+            </div>
+          </div>
+
+          <!-- Product 5: Foldable Walking Stick + Thermometer -->
+          <div class="product-card">
+            <span class="p-badge">বয়স্কদের সহায়িকা</span>
+            <div class="p-img-box">
+              <img 
+                src="https://dmedicalaid.com/wp-content/uploads/2023/07/1.png" 
+                alt="ফোল্ডেবল স্টিক" 
+                class="p-img"
+              >
+            </div>
+            <div class="p-details">
+              <div>
+                <h3 class="p-name">ফোল্ডেবল ওয়াকিং স্টিক + ডিজিটাল জ্বর মাপার থার্মোমিটার</h3>
+                <div class="p-rating">★★★★★ (৪১টি রিভিউ)</div>
+                <div class="p-price-row">
+                  <span class="p-price">৳ ৯৯০</span>
+                  <span class="p-old-price">৳ ১,২০০</span>
+                </div>
+              </div>
+              <a href="diabetis-machine.html#order-section" class="btn btn-primary btn-block">
+                অর্ডার করতে ক্লিক করুন
+              </a>
+            </div>
+          </div>
+
+          <!-- Product 6: Lumbar Support Cushion -->
+          <div class="product-card">
+            <span class="p-badge">কোমরের আরাম</span>
+            <div class="p-img-box">
+              <img 
+                src="https://dmedicalaid.com/wp-content/uploads/2026/04/fae65019-cee4-4355-ae30-58d47f34a6c8-1.jpg" 
+                alt="DMA Lumber Support Pillow" 
+                class="p-img"
+              >
+            </div>
+            <div class="p-details">
+              <div>
+                <h3 class="p-name">DMA প্রিমিয়াম লাম্বার ব্যাক সাপোর্ট কুশন পিলো</h3>
+                <div class="p-rating">★★★★★ (৩৮টি রিভিউ)</div>
+                <div class="p-price-row">
+                  <span class="p-price">৳ ৮৫০</span>
+                  <span class="p-old-price">৳ ১,০০০</span>
+                </div>
+              </div>
+              <a href="diabetis-machine.html#order-section" class="btn btn-primary btn-block">
+                অর্ডার করতে ক্লিক করুন
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Verified Customer Reviews Strip -->
+    <section class="review-strip-sec">
+      <div class="container">
+        <div class="section-title-wrap">
+          <h2 class="main-sec-title">আমাদের গ্রাহকদের সন্তুষ্টি</h2>
+          <p class="main-sec-sub">সারা বাংলাদেশে হাজারো সন্তুষ্ট গ্রাহকের অভিজ্ঞতা</p>
+        </div>
+
+        <div class="rev-row">
+          <div class="rev-card">
+            <div style="color:var(--gold);">★★★★★</div>
+            <p style="margin-top:6px; font-size:0.95rem;">
+              "Digital Medical Aid থেকে ডায়াবেটিস মেশিন নিয়েছি। মাত্র ২ দিনের মাথায় মিরপুরে হাতে পেয়ে চেক করে টাকা দিয়েছি। ল্যাবের সাথে ১০০% রেজাল্ট মিলে।"
+            </p>
+            <div class="rev-author">— মোঃ শাহজাহান মিয়া, ঢাকা</div>
+          </div>
+          <div class="rev-card">
+            <div style="color:var(--gold);">★★★★★</div>
+            <p style="margin-top:6px; font-size:0.95rem;">
+              "বাবার জন্য প্রেসার মেশিন এবং ওয়েট স্কেল নিয়েছিলাম। খুবই নিখুঁত কাজ করে। কাস্টমার সাপোর্টের ব্যবহারও অনেক ভালো।"
+            </p>
+            <div class="rev-author">— ইঞ্জি. কামরুল হাসান, উত্তরা</div>
+          </div>
+          <div class="rev-card">
+            <div style="color:var(--gold);">★★★★★</div>
+            <p style="margin-top:6px; font-size:0.95rem;">
+              "চট্টগ্রামে হোম ডেলিভারি পেয়েছি। অগ্রিম কোনো টাকা দিতে হয়নি। প্রোডাক্টের কোয়ালিটি যেমন ছবিতে দেখেছি তেমনই পেয়েছি।"
+            </p>
+            <div class="rev-author">— হাজ্বী আহাম্মদ আলী, চট্টগ্রাম</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div>
+          <div class="footer-heading">Digital Medical Aid (DMA)</div>
+          <p style="line-height:1.6; color:#cbd5e1;">
+            আমরা মানুষের দোরগোড়ায় সহজে ও সাশ্রয়ী মূল্যে স্বাস্থ্য সুরক্ষা পণ্য পৌঁছে দেওয়ার প্রত্যয়ে কাজ করছি। সকল ডিভাইসে পাচ্ছেন অফিশিয়াল গ্যারান্টি।
+          </p>
+          <p style="margin-top:8px;">📍 অফিস: ৩২/১, উত্তর পীরেরবাগ, ৬০ ফিট, মিরপুর-২, ঢাকা ১২১৬</p>
+        </div>
+
+        <div>
+          <div class="footer-heading">জরুরি লিংক</div>
+          <ul class="footer-list">
+            <li><a href="index.html">হোমপেজ</a></li>
+            <li><a href="diabetis-machine.html">ডায়াবেটিস মেশিন প্যাকেজ</a></li>
+            <li><a href="#products">সকল পণ্যসমূহ</a></li>
+            <li><a href="tel:01996365491">হটলাইন সাপোর্ট</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-heading">কাস্টমার হেল্পলাইন</div>
+          <p>অর্ডার সংক্রান্ত যেকোনো তথ্যে সরাসরি কল করুন:</p>
+          <a href="tel:01996365491" class="footer-phone-tag">
+            📞 01996365491
+          </a>
+          <p style="font-size:0.85rem; color:#94a3b8;">সকাল ৯টা থেকে রাত ১০টা পর্যন্ত সক্রিয়।</p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2026 Digital Medical Aid. সর্বস্বত্ব সংরক্ষিত।
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky Mobile Navigation Bar -->
+  <nav class="mobile-nav-bar" aria-label="Mobile Navigation">
+    <a href="index.html" class="mob-nav-item">
+      <span class="icon">🏠</span>
+      <span>হোম</span>
+    </a>
+    <a href="#products" class="mob-nav-item">
+      <span class="icon">🛍️</span>
+      <span>প্রোডাক্ট</span>
+    </a>
+    <a href="diabetis-machine.html" class="mob-nav-item">
+      <span class="icon">🩸</span>
+      <span>ডায়াবেটিস</span>
+    </a>
+    <a href="tel:01996365491" class="mob-nav-item">
+      <span class="icon">📞</span>
+      <span>কল করুন</span>
+    </a>
+  </nav>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/8801996365491?text=Hello%20Digital%20Medical%20Aid,%20I%20want%20to%20order" class="whatsapp-float" target="_blank" rel="noopener">
+    <span>💬 WhatsApp</span>
+  </a>
+
+</body>
+</html>

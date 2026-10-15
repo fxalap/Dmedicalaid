@@ -1,0 +1,1692 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PCL Care ডায়াবেটিস মেশিন | Digital Medical Aid (DMA)</title>
+  <meta name="description" content="Digital Medical Aid (DMA) থেকে আসল PCL Care ব্লাড গ্লুকোজ মনিটর অর্ডার করুন। প্রতি স্ট্রিপ মাত্র ৮ টাকা। ক্যাশ অন ডেলিভারি।">
+
+  <!-- Google Fonts: Noto Sans Bengali -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       CSS Reset & Professional Responsive Design System
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --dma-blue: #0b2275;
+      --dma-blue-dark: #07164f;
+      --dma-red: #d8232a;
+      --primary: #076254;
+      --primary-light: #edf7f4;
+      --accent: #e65100;
+      --accent-hover: #c74300;
+      --accent-soft: #fff4ec;
+      --gold: #f59e0b;
+      --text-main: #131d1b;
+      --text-muted: #4e5e5b;
+      --bg-body: #f4f7f6;
+      --bg-card: #ffffff;
+      --border: #d2e3de;
+      --border-focus: #0b2275;
+      --success: #15803d;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --font-family: 'Noto Sans Bengali', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-family);
+      background-color: var(--bg-body);
+      color: var(--text-main);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+      padding-bottom: 74px;
+    }
+
+    @media (min-width: 992px) {
+      body {
+        padding-bottom: 0;
+      }
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 52px;
+      padding: 12px 24px;
+      font-size: 1.1rem;
+      font-weight: 800;
+      font-family: inherit;
+      border-radius: var(--radius-md);
+      border: none;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.2s ease;
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #e65100 0%, #c43f00 100%);
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(230, 81, 0, 0.35);
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #cf4300 0%, #ab3200 100%);
+      box-shadow: 0 6px 18px rgba(230, 81, 0, 0.45);
+      color: #ffffff;
+    }
+
+    .btn-block {
+      width: 100%;
+    }
+
+    /* Top Trust Banner */
+    .top-trust-bar {
+      background: linear-gradient(90deg, #07164f 0%, #0b2275 100%);
+      color: #ffffff;
+      font-size: 0.88rem;
+      font-weight: 700;
+      padding: 7px 0;
+      text-align: center;
+    }
+
+    .top-trust-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 14px;
+    }
+
+    /* Header */
+    .site-header {
+      background: #ffffff;
+      border-bottom: 2px solid var(--border);
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .brand-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .dma-logo-svg {
+      width: 78px;
+      height: 48px;
+      flex-shrink: 0;
+    }
+
+    @media (min-width: 768px) {
+      .dma-logo-svg {
+        width: 90px;
+        height: 54px;
+      }
+    }
+
+    .brand-meta {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-title {
+      font-size: 1.25rem;
+      font-weight: 900;
+      color: var(--dma-blue);
+      line-height: 1.15;
+    }
+
+    .brand-subtitle {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .btn-header-call {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #eef3ff;
+      border: 1.5px solid var(--dma-blue);
+      color: var(--dma-blue);
+      padding: 8px 14px;
+      border-radius: 50px;
+      font-size: 0.95rem;
+      font-weight: 800;
+      transition: all 0.2s ease;
+    }
+
+    .btn-header-call:hover {
+      background: var(--dma-blue);
+      color: #ffffff;
+    }
+
+    /* Section Headings */
+    .section-header {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .section-title {
+      font-size: 1.7rem;
+      font-weight: 900;
+      color: var(--dma-blue-dark);
+      line-height: 1.3;
+    }
+
+    .section-subtitle {
+      font-size: 1rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      padding: 1.5rem 0 1rem;
+    }
+
+    .hero-card {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 16px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    }
+
+    @media (min-width: 860px) {
+      .hero-card {
+        padding: 24px;
+      }
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1fr 1.15fr;
+        gap: 2.2rem;
+        align-items: center;
+      }
+    }
+
+    .hero-media-box {
+      background: radial-gradient(circle, #f3f8f6 0%, #e3eee9 100%);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 280px;
+      position: relative;
+    }
+
+    .hero-product-img {
+      width: 100%;
+      max-width: 320px;
+      max-height: 300px;
+      object-fit: contain;
+      filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.15));
+      transition: transform 0.25s ease;
+    }
+
+    .hero-product-img:hover {
+      transform: scale(1.03);
+    }
+
+    .badge-float {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: var(--dma-blue);
+      color: #ffffff;
+      font-size: 0.8rem;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 50px;
+      box-shadow: 0 2px 8px rgba(11, 34, 117, 0.3);
+    }
+
+    .hero-details {
+      margin-top: 14px;
+    }
+
+    @media (min-width: 860px) {
+      .hero-details {
+        margin-top: 0;
+      }
+    }
+
+    .product-title {
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: var(--dma-blue-dark);
+      line-height: 1.25;
+    }
+
+    .price-banner {
+      background: var(--accent-soft);
+      border-left: 5px solid var(--accent);
+      padding: 10px 16px;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      margin: 12px 0 16px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 10px;
+    }
+
+    .price-main {
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--accent);
+    }
+
+    .price-note {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      font-weight: 700;
+    }
+
+    .hero-points-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .hero-points-list li {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .hero-points-list li span.tick {
+      color: var(--success);
+      font-size: 1.25rem;
+      font-weight: 900;
+    }
+
+    /* Packages Section */
+    .packages-section {
+      padding: 1.8rem 0;
+    }
+
+    .packages-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    @media (min-width: 768px) {
+      .packages-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .package-card {
+      background: #ffffff;
+      border: 3px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 16px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 12px;
+      position: relative;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    }
+
+    .package-card:hover {
+      border-color: var(--dma-blue);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(11, 34, 117, 0.12);
+    }
+
+    .package-card.selected {
+      border-color: var(--dma-blue);
+      background: #f7f9ff;
+      box-shadow: 0 6px 18px rgba(11, 34, 117, 0.15);
+    }
+
+    .pkg-top-tag {
+      position: absolute;
+      top: -12px;
+      right: 14px;
+      background: var(--dma-blue);
+      color: #ffffff;
+      font-size: 0.78rem;
+      font-weight: 800;
+      padding: 3px 12px;
+      border-radius: 50px;
+    }
+
+    .package-header-flex {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .package-thumb {
+      width: 70px;
+      height: 70px;
+      object-fit: contain;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 4px;
+      flex-shrink: 0;
+    }
+
+    .pkg-title {
+      font-size: 1.15rem;
+      font-weight: 900;
+      color: var(--dma-blue-dark);
+      line-height: 1.25;
+    }
+
+    .pkg-price-text {
+      font-size: 1.6rem;
+      font-weight: 900;
+      color: var(--accent);
+      margin-top: 2px;
+    }
+
+    .pkg-desc-list {
+      list-style: none;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      border-top: 1px dashed var(--border);
+      padding-top: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .pkg-select-btn {
+      width: 100%;
+      min-height: 44px;
+      background: #ffffff;
+      border: 2px solid var(--dma-blue);
+      color: var(--dma-blue);
+      font-size: 1rem;
+      font-weight: 800;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      font-family: inherit;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .package-card.selected .pkg-select-btn {
+      background: var(--dma-blue);
+      color: #ffffff;
+    }
+
+    /* Specs Section */
+    .specs-section {
+      padding: 1rem 0;
+    }
+
+    .specs-card-box {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    }
+
+    @media (min-width: 768px) {
+      .specs-grid-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.8rem;
+      }
+    }
+
+    .specs-column h3 {
+      font-size: 1.25rem;
+      font-weight: 900;
+      color: var(--dma-blue);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .specs-item-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 1.02rem;
+      font-weight: 600;
+      padding-left: 1.2em;
+    }
+
+    .specs-item-list li::before {
+      content: "•";
+      color: var(--primary);
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+
+    /* Customer Reviews */
+    .reviews-section {
+      padding: 1.8rem 0;
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    @media (min-width: 680px) {
+      .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .review-bubble-card {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+    }
+
+    .rev-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .rev-name {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--dma-blue-dark);
+    }
+
+    .rev-stars {
+      color: var(--gold);
+      font-size: 1.15rem;
+      letter-spacing: 2px;
+    }
+
+    .rev-text {
+      font-size: 0.98rem;
+      color: var(--text-main);
+      line-height: 1.5;
+    }
+
+    .rev-meta {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 8px;
+      font-weight: 600;
+    }
+
+    /* Checkout & Order Form Section */
+    .order-section {
+      padding: 2rem 0 3rem;
+      background: linear-gradient(180deg, var(--bg-body) 0%, #eaf2ef 100%);
+    }
+
+    .order-container-card {
+      background: #ffffff;
+      border: 3px solid var(--dma-blue);
+      border-radius: var(--radius-lg);
+      padding: 20px 16px;
+      box-shadow: 0 8px 30px rgba(11, 34, 117, 0.12);
+    }
+
+    @media (min-width: 900px) {
+      .order-container-card {
+        padding: 32px 28px;
+      }
+      .checkout-grid-2col {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        gap: 2.2rem;
+        align-items: flex-start;
+      }
+    }
+
+    .checkout-form-title {
+      text-align: center;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #eef2f8;
+      padding-bottom: 12px;
+    }
+
+    .checkout-form-title h2 {
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: var(--dma-blue-dark);
+    }
+
+    .checkout-form-title p {
+      font-size: 1rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--dma-blue-dark);
+      margin-bottom: 6px;
+    }
+
+    .form-label .req {
+      color: var(--accent);
+    }
+
+    .form-input, .form-textarea, .form-select {
+      width: 100%;
+      min-height: 50px;
+      padding: 12px 16px;
+      font-size: 1.05rem;
+      font-family: inherit;
+      color: var(--text-main);
+      background-color: #fafbfb;
+      border: 2px solid var(--border);
+      border-radius: var(--radius-sm);
+      transition: all 0.25s ease;
+    }
+
+    .form-textarea {
+      min-height: 84px;
+      resize: vertical;
+    }
+
+    .form-input:focus, .form-textarea:focus, .form-select:focus {
+      border-color: var(--dma-blue);
+      background-color: #ffffff;
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(11, 34, 117, 0.15);
+    }
+
+    .form-error-msg {
+      color: #dc2626;
+      font-size: 0.88rem;
+      font-weight: 700;
+      margin-top: 4px;
+      display: none;
+    }
+
+    .form-group.has-error .form-input,
+    .form-group.has-error .form-textarea {
+      border-color: #dc2626;
+      background-color: #fff6f6;
+    }
+
+    .form-group.has-error .form-error-msg {
+      display: block;
+    }
+
+    /* Delivery Area Options */
+    .delivery-options-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .delivery-choice-card {
+      border: 2px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 10px 12px;
+      text-align: center;
+      cursor: pointer;
+      background: #fafdfc;
+      transition: all 0.15s ease;
+    }
+
+    .delivery-choice-card.selected {
+      border-color: var(--dma-blue);
+      background: #edf2ff;
+      box-shadow: 0 2px 8px rgba(11, 34, 117, 0.12);
+    }
+
+    .del-area-name {
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--dma-blue-dark);
+      display: block;
+    }
+
+    .del-area-fee {
+      font-size: 0.92rem;
+      font-weight: 800;
+      color: var(--accent);
+      display: block;
+      margin-top: 2px;
+    }
+
+    /* Quantity Box */
+    .qty-box-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .qty-btn {
+      width: 48px;
+      height: 48px;
+      border: 2px solid var(--border);
+      background: #ffffff;
+      border-radius: var(--radius-sm);
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: var(--dma-blue);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+    }
+
+    .qty-btn:hover {
+      background: #f0f4ff;
+      border-color: var(--dma-blue);
+    }
+
+    .qty-num-show {
+      font-size: 1.45rem;
+      font-weight: 900;
+      min-width: 42px;
+      text-align: center;
+      color: var(--dma-blue-dark);
+    }
+
+    /* Sticky Sidebar Order Summary Box */
+    .order-summary-sidebar {
+      background: #f8fafc;
+      border: 2px dashed #94a3b8;
+      border-radius: var(--radius-md);
+      padding: 18px;
+    }
+
+    @media (min-width: 900px) {
+      .order-summary-sidebar {
+        position: sticky;
+        top: 90px;
+      }
+    }
+
+    .summary-heading {
+      font-size: 1.25rem;
+      font-weight: 900;
+      color: var(--dma-blue-dark);
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 8px;
+      margin-bottom: 12px;
+    }
+
+    .summary-line-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.05rem;
+      margin-bottom: 8px;
+      color: var(--text-main);
+    }
+
+    .summary-line-item strong {
+      color: var(--dma-blue);
+    }
+
+    .summary-line-item.grand-total {
+      font-size: 1.55rem;
+      font-weight: 900;
+      color: var(--accent);
+      border-top: 2px solid #cbd5e1;
+      padding-top: 10px;
+      margin-top: 10px;
+    }
+
+    .cod-guarantee-note {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--primary);
+      background: var(--primary-light);
+      padding: 8px 12px;
+      border-radius: var(--radius-sm);
+      text-align: center;
+      margin-top: 14px;
+    }
+
+    /* FAQ Section */
+    .faq-section {
+      padding: 1.8rem 0;
+    }
+
+    .faq-list {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .faq-item {
+      background: #ffffff;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+    }
+
+    .faq-item.open {
+      border-color: var(--dma-blue);
+    }
+
+    .faq-btn {
+      width: 100%;
+      min-height: 52px;
+      padding: 14px 18px;
+      background: none;
+      border: none;
+      font-family: inherit;
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--dma-blue-dark);
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .faq-icon {
+      font-size: 1.4rem;
+      color: var(--dma-blue);
+      transition: transform 0.2s ease;
+      flex-shrink: 0;
+    }
+
+    .faq-item.open .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 0 18px 16px;
+      font-size: 1rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+      border-top: 1px solid var(--primary-light);
+    }
+
+    .faq-item.open .faq-answer {
+      display: block;
+    }
+
+    /* Footer */
+    .site-footer {
+      background: var(--dma-blue-dark);
+      color: #e2e8f0;
+      padding: 2.2rem 0 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      text-align: center;
+    }
+
+    @media (min-width: 640px) {
+      .footer-grid {
+        grid-template-columns: 1.2fr 1fr;
+        text-align: left;
+      }
+    }
+
+    .footer-title {
+      font-size: 1.4rem;
+      font-weight: 900;
+      color: #ffffff;
+      margin-bottom: 6px;
+    }
+
+    .footer-contact-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 8px 18px;
+      border-radius: 50px;
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 1.1rem;
+      margin-top: 10px;
+    }
+
+    /* Sticky Mobile Bar */
+    .sticky-mobile-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #ffffff;
+      border-top: 2px solid var(--border);
+      box-shadow: 0 -4px 14px rgba(0, 0, 0, 0.1);
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      z-index: 999;
+    }
+
+    @media (min-width: 992px) {
+      .sticky-mobile-bar {
+        display: none;
+      }
+    }
+
+    .sticky-total-col {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sticky-total-label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-weight: 700;
+    }
+
+    .sticky-total-price {
+      font-size: 1.45rem;
+      font-weight: 900;
+      color: var(--accent);
+      line-height: 1;
+    }
+
+    /* Modal */
+    .modal-backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.65);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      z-index: 1000;
+    }
+
+    .modal-backdrop.active {
+      display: flex;
+    }
+
+    .modal-card {
+      background: #ffffff;
+      border-radius: var(--radius-lg);
+      padding: 26px 20px;
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Trust Strip -->
+  <div class="top-trust-bar">
+    <div class="container">
+      <div class="top-trust-inner">
+        <span>✓ ক্যাশ অন ডেলিভারি (হাতে পেয়ে টাকা দিন)</span>
+        <span>✓ ২ বছরের রিপ্লেসমেন্ট গ্যারান্টি</span>
+        <span>✓ ডেলিভারি: ঢাকায় ৬০৳ | ঢাকার বাইরে ১২০৳</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Header with DMA Logo -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-content">
+        
+        <a href="#order-section" class="brand-wrap" aria-label="Digital Medical Aid Homepage">
+          <!-- DMA Official Scalable Vector Logo -->
+          <svg class="dma-logo-svg" viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="DMA Official Logo">
+            <!-- Outer Red Outline Oval -->
+            <ellipse cx="120" cy="70" rx="114" ry="60" fill="none" stroke="#D8232A" stroke-width="4.5"/>
+            <!-- Inner White Stroke Spacer -->
+            <ellipse cx="120" cy="70" rx="110" ry="56" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+            <!-- Deep Navy Blue Background Oval -->
+            <ellipse cx="120" cy="70" rx="108" ry="54" fill="#0B2275"/>
+            
+            <!-- DMA Bold Letters -->
+            <g fill="#FFFFFF">
+              <!-- 'D' Outer Body -->
+              <path d="M42 42 H76 C94 42 102 54 102 70 C102 86 94 98 76 98 H42 V42 Z" fill="#FFFFFF"/>
+              <!-- 'D' Inner Cutout -->
+              <path d="M58 54 H72 C80 54 86 60 86 70 C86 80 80 86 72 86 H58 V54 Z" fill="#0B2275"/>
+              <!-- Stethoscope inside 'D' -->
+              <circle cx="68" cy="65" r="7" stroke="#FFFFFF" stroke-width="3" fill="none"/>
+              <path d="M68 72 V82 M64 82 H72" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="68" cy="65" r="2.5" fill="#FFFFFF"/>
+
+              <!-- 'M' Letter -->
+              <path d="M106 42 H122 L136 68 L150 42 H166 V98 H152 V64 L139 88 H133 L120 64 V98 H106 V42 Z"/>
+
+              <!-- 'A' Letter -->
+              <path d="M184 42 H198 L218 98 H203 L199 84 H183 L179 98 H164 L184 42 Z M186 73 H196 L191 58 L186 73 Z"/>
+            </g>
+
+            <!-- TM Sign -->
+            <text x="214" y="32" font-family="-apple-system, sans-serif" font-size="14" font-weight="900" fill="#333333">TM</text>
+          </svg>
+
+          <div class="brand-meta">
+            <span class="brand-title">Digital Medical Aid</span>
+            <span class="brand-subtitle">সহজে ডায়াবেটিস পরীক্ষা</span>
+          </div>
+        </a>
+
+        <!-- Header Hotline Button -->
+        <div class="header-actions">
+          <a href="tel:01996365491" class="btn-header-call" aria-label="হটলাইনে কল করুন 01996365491">
+            <span>📞</span> <span>01996365491</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-card">
+          <div class="hero-grid">
+            
+            <div class="hero-media-box">
+              <span class="badge-float">১০০% আসল ডিভাইস</span>
+              <img 
+                src="https://dmedicalaid.com/wp-content/uploads/2026/04/fae65019-cee4-4355-ae30-58d47f34a6c8-1.jpg" 
+                alt="PCL Care ডায়াবেটিস মেশিন বক্স" 
+                class="hero-product-img"
+                onerror="this.src='https://dmedicalaid.com/wp-content/uploads/2023/07/1.png';"
+              >
+            </div>
+
+            <div class="hero-details">
+              <h1 class="product-title">PCL Care ডায়াবেটিস মাপার মেশিন</h1>
+              
+              <div class="price-banner">
+                <span class="price-main">৳ ৭৯০</span>
+                <span class="price-note">থেকে শুরু (প্রতি স্ট্রিপ মাত্র ৮ টাকা)</span>
+              </div>
+
+              <ul class="hero-points-list">
+                <li><span class="tick">✓</span> মাত্র ৫ সেকেন্ডে রক্তে সুগারের নিখুঁত ফলাফল</li>
+                <li><span class="tick">✓</span> বড় এলসিডি ডিসপ্লে (চশমা ছাড়াই স্পষ্ট দেখা যায়)</li>
+                <li><span class="tick">✓</span> খাবারের আগে ও পরে (Before/After Meal) ফাংশন</li>
+                <li><span class="tick">✓</span> ব্যথামুক্ত ল্যান্সিং কলম ও সুঁই সেটের সাথে থাকছে</li>
+                <li><span class="tick">✓</span> ২ বছরের অফিসিয়াল রিপ্লেসমেন্ট গ্যারান্টি</li>
+              </ul>
+
+              <a href="#order-section" class="btn btn-primary btn-block">
+                🛒 প্যাকেজ নির্বাচন করে অর্ডার করুন
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packages Section (Clicking any box immediately selects it and smoothly scrolls to the order form!) -->
+    <section class="packages-section" id="packages">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">পছন্দের প্যাকেজ বেছে নিন</h2>
+          <p class="section-subtitle">যে প্যাকেজটি নিতে চান সেটিতে চাপ দিন, সাথে সাথে অর্ডার ফর্মে সিলেক্ট হয়ে যাবে</p>
+        </div>
+
+        <div class="packages-grid">
+          
+          <!-- Package 1 -->
+          <div class="package-card selected" id="pkgCard1" onclick="selectPackageAndScrollToOrder(1)" role="button" tabindex="0" aria-label="১০টি স্ট্রিপসহ মেশিন ৭৯০ টাকা নির্বাচন করুন">
+            <span class="pkg-top-tag">শুরুর জন্য পারফেক্ট</span>
+            <div>
+              <div class="package-header-flex">
+                <img src="https://dmedicalaid.com/wp-content/uploads/2023/07/1.png" alt="প্যাকেজ ১ ছবি" class="package-thumb" onerror="this.src='https://dmedicalaid.com/wp-content/uploads/2026/04/fae65019-cee4-4355-ae30-58d47f34a6c8-1.jpg';">
+                <div>
+                  <div class="pkg-title">১০টি স্ট্রিপসহ মেশিন</div>
+                  <div class="pkg-price-text">৳ ৭৯০</div>
+                </div>
+              </div>
+              <ul class="pkg-desc-list">
+                <li>• ১টি PCL Care ডায়াবেটিস মেশিন</li>
+                <li>• ১০টি টেস্ট স্ট্রিপ ও ১০টি সুই</li>
+                <li>• ল্যান্সিং পেন, ব্যাটারি ও ক্যারিং ব্যাগ</li>
+              </ul>
+            </div>
+            <button type="button" class="pkg-select-btn">
+              <span>🛒 এই প্যাকেজটি অর্ডার করুন</span>
+            </button>
+          </div>
+
+          <!-- Package 2 -->
+          <div class="package-card" id="pkgCard2" onclick="selectPackageAndScrollToOrder(2)" role="button" tabindex="0" aria-label="মেশিন ও ৫০ স্ট্রিপ ১১৯০ টাকা নির্বাচন করুন">
+            <span class="pkg-top-tag" style="background:var(--accent);">সর্বাধিক জনপ্রিয়</span>
+            <div>
+              <div class="package-header-flex">
+                <img src="https://dmedicalaid.com/wp-content/uploads/2023/07/2-300x300.png" alt="প্যাকেজ ২ ছবি" class="package-thumb" onerror="this.src='https://dmedicalaid.com/wp-content/uploads/2023/07/1.png';">
+                <div>
+                  <div class="pkg-title">মেশিন + ৫০ স্ট্রিপের কৌটা</div>
+                  <div class="pkg-price-text">৳ ১,১৯০</div>
+                </div>
+              </div>
+              <ul class="pkg-desc-list">
+                <li>• ১০ স্ট্রিপসহ সম্পূর্ণ মেশিন সেট</li>
+                <li>• অতিরিক্ত ৫০ স্ট্রিপের সিল্ড কৌটা</li>
+                <li>• সর্বমোট ৬০টি টেস্ট স্ট্রিপ</li>
+              </ul>
+            </div>
+            <button type="button" class="pkg-select-btn">
+              <span>🛒 এই প্যাকেজটি অর্ডার করুন</span>
+            </button>
+          </div>
+
+          <!-- Package 3 -->
+          <div class="package-card" id="pkgCard3" onclick="selectPackageAndScrollToOrder(3)" role="button" tabindex="0" aria-label="মেশিন ও ১০০ স্ট্রিপ ১৫৯০ টাকা নির্বাচন করুন">
+            <span class="pkg-top-tag">মেগা সেভার প্যাক</span>
+            <div>
+              <div class="package-header-flex">
+                <img src="https://dmedicalaid.com/wp-content/uploads/2023/07/2-300x300.png" alt="প্যাকেজ ৩ ছবি" class="package-thumb" onerror="this.src='https://dmedicalaid.com/wp-content/uploads/2023/07/1.png';">
+                <div>
+                  <div class="pkg-title">মেশিন + ১০০ স্ট্রিপের কৌটা</div>
+                  <div class="pkg-price-text">৳ ১,৫৯০</div>
+                </div>
+              </div>
+              <ul class="pkg-desc-list">
+                <li>• ১০ স্ট্রিপসহ সম্পূর্ণ মেশিন সেট</li>
+                <li>• (৫০+৫০)=১০০ স্ট্রিপের ২টি কৌটা</li>
+                <li>• সর্বমোট ১১০টি টেস্ট স্ট্রিপ</li>
+              </ul>
+            </div>
+            <button type="button" class="pkg-select-btn">
+              <span>🛒 এই প্যাকেজটি অর্ডার করুন</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Box Specs & Benefits -->
+    <section class="specs-section">
+      <div class="container">
+        <div class="specs-card-box">
+          <div class="specs-grid-layout">
+            <div class="specs-column">
+              <h3>📦 বক্সের ভেতরে যা পাবেন:</h3>
+              <ul class="specs-item-list">
+                <li>১টি PCL Care ডিজিটাল গ্লুকোজ মিটার</li>
+                <li>১টি ব্যথামুক্ত ল্যান্সিং ডিভাইস (কলম)</li>
+                <li>১০টি টেস্ট স্ট্রিপ ও ১০টি জীবাণুমুক্ত সুই</li>
+                <li>১টি দীর্ঘস্থায়ী লিথিয়াম ব্যাটারি</li>
+                <li>১টি ইউজার গাইড ও মজবুত ক্যারিং বক্স</li>
+              </ul>
+            </div>
+            <div class="specs-column">
+              <h3>⭐ বিশেষ সুবিধা ও ওয়ারেন্টি:</h3>
+              <ul class="specs-item-list">
+                <li>প্রতিটি অতিরিক্ত স্ট্রিপের দাম মাত্র ৮ টাকা</li>
+                <li>২ বছরের অফিশিয়াল রিপ্লেসমেন্ট গ্যারান্টি</li>
+                <li>ক্যাশ অন ডেলিভারি (হাতে পেয়ে দেখে মূল্য পরিশোধ)</li>
+                <li>দ্রুত হোম ডেলিভারি সুবিধা সারা বাংলাদেশে</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="reviews-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">গ্রাহকদের বাস্তব রিভিউ</h2>
+          <p class="section-subtitle">আমাদের প্রকৃত ক্রেতাদের সন্তুষ্টি ও অভিজ্ঞতা</p>
+        </div>
+
+        <div class="reviews-grid">
+          <div class="review-bubble-card">
+            <div class="rev-top">
+              <span class="rev-name">মোহাম্মদ শাহজাহান মিয়া</span>
+              <span class="rev-stars">★★★★★</span>
+            </div>
+            <p class="rev-text">"ল্যাবের টেস্টের সাথে মিলিয়ে দেখেছি, রেজাল্ট একদম একুরেট পেয়েছি। ডিসপ্লে বড় হওয়ায় পড়তে কোনো কষ্ট হয় না।"</p>
+            <div class="rev-meta">মিরপুর, ঢাকা • ভেরিফায়েড ক্রেতা</div>
+          </div>
+
+          <div class="review-bubble-card">
+            <div class="rev-top">
+              <span class="rev-name">কামরুল হাসান</span>
+              <span class="rev-stars">★★★★★</span>
+            </div>
+            <p class="rev-text">"বাবার জন্য ৫০ স্ট্রিপের প্যাকেজটি নিয়েছি। প্রতি স্ট্রিপ ৮ টাকা হওয়ায় খরচ অনেক বেঁচে যায়। দারুণ সেবা!"</p>
+            <div class="rev-meta">উত্তরা, ঢাকা • ভেরিফায়েড ক্রেতা</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Checkout & Order Form Section -->
+    <section class="order-section" id="order-section">
+      <div class="container">
+        <div class="order-container-card">
+          
+          <div class="checkout-form-title">
+            <h2>অর্ডার ফর্ম পূরণ করুন</h2>
+            <p>পণ্য হাতে পেয়ে দেখে টাকা দিন (ক্যাশ অন ডেলিভারি)</p>
+          </div>
+
+          <form id="orderCheckoutForm" novalidate onsubmit="handleOrderSubmission(event)">
+            <div class="checkout-grid-2col">
+              
+              <!-- Left Column: Customer Inputs -->
+              <div class="checkout-inputs-col">
+                
+                <!-- Package Selection Dropdown in Form -->
+                <div class="form-group" id="formPackageGroup">
+                  <label for="packageDropdown" class="form-label">
+                    ১. নির্বাচিত প্যাকেজ <span class="req">*</span>
+                  </label>
+                  <select id="packageDropdown" class="form-select" onchange="dropdownSelected(this.value)">
+                    <option value="1">১০টি স্ট্রিপসহ মেশিন — ৳ ৭৯০</option>
+                    <option value="2">মেশিন + ৫০টি অতিরিক্ত স্ট্রিপ — ৳ ১,১৯০</option>
+                    <option value="3">মেশিন + ১০০টি অতিরিক্ত স্ট্রিপ — ৳ ১,৫৯০</option>
+                  </select>
+                </div>
+
+                <!-- Delivery Area Options (60 TK vs 120 TK) -->
+                <div class="form-group">
+                  <label class="form-label">
+                    ২. ডেলিভারি এলাকা নির্বাচন <span class="req">*</span>
+                  </label>
+                  <div class="delivery-options-grid">
+                    <div class="delivery-choice-card selected" id="optDhakaIn" onclick="setDelivery(60, 'in')">
+                      <span class="del-area-name">ঢাকার ভেতরে</span>
+                      <span class="del-area-fee">৬০ টাকা</span>
+                    </div>
+                    <div class="delivery-choice-card" id="optDhakaOut" onclick="setDelivery(120, 'out')">
+                      <span class="del-area-name">ঢাকার বাইরে</span>
+                      <span class="del-area-fee">১২০ টাকা</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Quantity -->
+                <div class="form-group">
+                  <label class="form-label">৩. অর্ডারের পরিমাণ</label>
+                  <div class="qty-box-wrap">
+                    <button type="button" class="qty-btn" onclick="adjustQty(-1)" aria-label="পরিমাণ কমান">−</button>
+                    <span class="qty-num-show" id="qtyDisplayBox">১</span>
+                    <button type="button" class="qty-btn" onclick="adjustQty(1)" aria-label="পরিমাণ বাড়ান">+</button>
+                  </div>
+                </div>
+
+                <!-- Name -->
+                <div class="form-group" id="grpName">
+                  <label for="inputName" class="form-label">
+                    ৪. আপনার নাম <span class="req">*</span>
+                  </label>
+                  <input type="text" id="inputName" class="form-input" placeholder="যেমন: মোঃ রফিকুল ইসলাম" required>
+                  <div class="form-error-msg">অনুগ্রহ করে আপনার নাম লিখুন।</div>
+                </div>
+
+                <!-- Mobile Phone -->
+                <div class="form-group" id="grpPhone">
+                  <label for="inputPhone" class="form-label">
+                    ৫. মোবাইল নম্বর <span class="req">*</span>
+                  </label>
+                  <input type="tel" id="inputPhone" class="form-input" placeholder="যেমন: 017XXXXXXXX" maxlength="11" required>
+                  <div class="form-error-msg">সঠিক ১১ ডিজিটের মোবাইল নম্বর দিন (যেমন: 017XXXXXXXX)।</div>
+                </div>
+
+                <!-- Address -->
+                <div class="form-group" id="grpAddress">
+                  <label for="inputAddress" class="form-label">
+                    ৬. সম্পূর্ণ ঠিকানা <span class="req">*</span>
+                  </label>
+                  <textarea id="inputAddress" class="form-textarea" placeholder="বাসা/রোড নম্বর, এলাকা, থানা ও জেলা লিখুন" required></textarea>
+                  <div class="form-error-msg">অনুগ্রহ করে সম্পূর্ণ ঠিকানা লিখুন।</div>
+                </div>
+
+              </div>
+
+              <!-- Right Column: Live Bill Summary & Confirm Button -->
+              <div class="checkout-summary-col">
+                <div class="order-summary-sidebar">
+                  <div class="summary-heading">অর্ডার বিবরণী (Live Bill)</div>
+                  
+                  <div class="summary-line-item">
+                    <span>প্যাকেজ:</span>
+                    <strong id="billPkgName">১০টি স্ট্রিপসহ মেশিন</strong>
+                  </div>
+
+                  <div class="summary-line-item">
+                    <span>একক মূল্য:</span>
+                    <span id="billUnitPrice">৳ ৭৯০</span>
+                  </div>
+
+                  <div class="summary-line-item">
+                    <span>পরিমাণ:</span>
+                    <span id="billQty">১ টি</span>
+                  </div>
+
+                  <div class="summary-line-item">
+                    <span>পণ্যের মূল্য:</span>
+                    <span id="billSubtotal">৳ ৭৯০</span>
+                  </div>
+
+                  <div class="summary-line-item">
+                    <span>ডেলিভারি চার্জ:</span>
+                    <span id="billDelivery">৳ ৬০</span>
+                  </div>
+
+                  <div class="summary-line-item grand-total">
+                    <span>সর্বমোট বিল:</span>
+                    <span id="billGrandTotal">৳ ৮৫০</span>
+                  </div>
+
+                  <div class="cod-guarantee-note">
+                    ✓ কোনো অগ্রিম টাকা লাগবে না, পণ্য হাতে পেয়ে দেখে টাকা দিন।
+                  </div>
+
+                  <div style="margin-top: 18px;">
+                    <button type="submit" class="btn btn-primary btn-block" style="min-height: 56px; font-size: 1.25rem;">
+                      ✓ অর্ডার কনফার্ম করুন
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">সাধারণ প্রশ্নোত্তর (FAQ)</h2>
+          <p class="section-subtitle">অর্ডার ও ডেলিভারি সম্পর্কে প্রয়োজনীয় তথ্য</p>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-btn" type="button" onclick="toggleFaqAccordion(this)">
+              <span>১. ডেলিভারি চার্জ কত এবং টাকা কখন দিতে হবে?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              ঢাকার ভেতরে ডেলিভারি চার্জ <strong>৬০ টাকা</strong> এবং ঢাকার বাইরে সারাদেশে <strong>১২০ টাকা</strong>। কোনো অগ্রিম টাকা দিতে হবে না, পণ্য হাতে পেয়ে দেখে সম্পূর্ণ টাকা ডেলিভারি ম্যানকে বুঝিয়ে দিবেন।
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-btn" type="button" onclick="toggleFaqAccordion(this)">
+              <span>২. প্যাকেজগুলোর দাম কত?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              ১০টি স্ট্রিপসহ মেশিন <strong>৳ ৭৯০</strong>, অতিরিক্ত ৫০টি স্ট্রিপসহ প্যাক <strong>৳ ১,১৯০</strong> এবং অতিরিক্ত ১০০টি স্ট্রিপসহ মেগা প্যাক <strong>৳ ১,৫৯০</strong>।
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-btn" type="button" onclick="toggleFaqAccordion(this)">
+              <span>৩. কোনো সমস্যা হলে যোগাযোগ করব কীভাবে?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              সরাসরি আমাদের অফিশিয়াল হটলাইন নম্বর <strong>01996365491</strong>-এ কল করতে পারেন।
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-title">Digital Medical Aid (DMA)</div>
+          <p>আপনার পরিবারের বিশ্বস্ত স্বাস্থ্যসেবা সহযোগী। সুলভ মূল্যে মানসম্মত ডায়াবেটিস সামগ্রী সরবরাহ করাই আমাদের লক্ষ্য।</p>
+          <p style="margin-top: 6px;">📍 ঠিকানা: ৩২/১, উত্তর পীরেরবাগ, ৬০ ফিট, মিরপুর-২, ঢাকা ১২১৬</p>
+        </div>
+
+        <div>
+          <div style="font-weight: 800; font-size: 1.15rem; color: #ffffff;">জরুরি কাস্টমার সাপোর্ট:</div>
+          <a href="tel:01996365491" class="footer-contact-link">
+            📞 01996365491
+          </a>
+          <p style="margin-top: 8px; font-size: 0.9rem; color: #cbd5e1;">সকাল ৯টা থেকে রাত ১০টা পর্যন্ত যেকোনো তথ্যে ফোন করুন।</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2026 Digital Medical Aid. সর্বস্বত্ব সংরক্ষিত।
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky Mobile Bar -->
+  <div class="sticky-mobile-bar">
+    <div class="sticky-total-col">
+      <span class="sticky-total-label">সর্বমোট বিল (ডেলিভারিসহ):</span>
+      <span class="sticky-total-price" id="mobileStickyPrice">৳ ৮৫০</span>
+    </div>
+    <a href="#order-section" class="btn btn-primary" style="min-height: 46px; padding: 10px 22px; font-size: 1.05rem;">
+      অর্ডার করুন
+    </a>
+  </div>
+
+  <!-- Success Confirmation Modal -->
+  <div class="modal-backdrop" id="orderConfirmModal">
+    <div class="modal-card">
+      <div style="font-size: 2.8rem; color: var(--success); margin-bottom: 6px;">✓</div>
+      <h3 style="font-size: 1.45rem; font-weight: 900; color: var(--dma-blue); margin-bottom: 10px;">আপনার অর্ডারটি সফল হয়েছে!</h3>
+      <div id="modalOrderSummary" style="font-size: 1rem; color: var(--text-main); line-height: 1.55; margin-bottom: 20px;"></div>
+      <button type="button" class="btn btn-primary btn-block" onclick="dismissModal()">ঠিক আছে</button>
+    </div>
+  </div>
+
+  <!-- JavaScript Logic -->
+  <script>
+    const allPackages = {
+      1: { name: "১০টি স্ট্রিপসহ মেশিন (বেসিক সেট)", price: 790 },
+      2: { name: "মেশিন + ৫০টি অতিরিক্ত স্ট্রিপ", price: 1190 },
+      3: { name: "মেশিন + ১০০টি অতিরিক্ত স্ট্রিপ", price: 1590 }
+    };
+
+    let activePackageId = 1;
+    let orderQuantity = 1;
+    let shippingCharge = 60; // 60 TK Inside Dhaka, 120 TK Outside
+
+    // Bangla Number Formatter
+    function convertToBn(num) {
+      const bnDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
+      return num.toString().replace(/\d/g, d => bnDigits[d]);
+    }
+
+    // Core Package Selection Function
+    function selectPackage(id) {
+      activePackageId = id;
+
+      // Update package card styles
+      for (let i = 1; i <= 3; i++) {
+        const card = document.getElementById(`pkgCard${i}`);
+        if (card) {
+          if (i === id) {
+            card.classList.add('selected');
+          } else {
+            card.classList.remove('selected');
+          }
+        }
+      }
+
+      // Sync form dropdown
+      const dropdown = document.getElementById('packageDropdown');
+      if (dropdown) dropdown.value = id;
+
+      updateLiveReceipt();
+    }
+
+    // NEW FUNCTION: Select package AND smoothly scroll to Order Form Box!
+    function selectPackageAndScrollToOrder(id) {
+      // 1. Select the package
+      selectPackage(id);
+
+      // 2. Smoothly scroll down to the order section
+      const orderSec = document.getElementById('order-section');
+      if (orderSec) {
+        orderSec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+
+      // 3. Highlight the package dropdown in the form for clear visual feedback
+      const pkgDropdown = document.getElementById('packageDropdown');
+      if (pkgDropdown) {
+        pkgDropdown.style.borderColor = 'var(--accent)';
+        pkgDropdown.style.boxShadow = '0 0 0 4px rgba(230, 81, 0, 0.25)';
+        setTimeout(() => {
+          pkgDropdown.style.borderColor = 'var(--dma-blue)';
+          pkgDropdown.style.boxShadow = '';
+        }, 1200);
+      }
+    }
+
+    function dropdownSelected(val) {
+      const id = parseInt(val, 10);
+      if (allPackages[id]) {
+        selectPackage(id);
+      }
+    }
+
+    // Delivery Area Selection
+    function setDelivery(cost, type) {
+      shippingCharge = cost;
+      const optIn = document.getElementById('optDhakaIn');
+      const optOut = document.getElementById('optDhakaOut');
+
+      if (type === 'in') {
+        optIn.classList.add('selected');
+        optOut.classList.remove('selected');
+      } else {
+        optOut.classList.add('selected');
+        optIn.classList.remove('selected');
+      }
+
+      updateLiveReceipt();
+    }
+
+    // Quantity Adjustment
+    function adjustQty(change) {
+      const next = orderQuantity + change;
+      if (next >= 1 && next <= 10) {
+        orderQuantity = next;
+        document.getElementById('qtyDisplayBox').textContent = convertToBn(orderQuantity);
+        updateLiveReceipt();
+      }
+    }
+
+    // Live Calculation Update
+    function updateLiveReceipt() {
+      const pkg = allPackages[activePackageId];
+      if (!pkg) return;
+
+      const subtotal = pkg.price * orderQuantity;
+      const totalBill = subtotal + shippingCharge;
+
+      document.getElementById('billPkgName').textContent = pkg.name;
+      document.getElementById('billUnitPrice').textContent = `৳ ${convertToBn(pkg.price)}`;
+      document.getElementById('billQty').textContent = `${convertToBn(orderQuantity)} টি`;
+      document.getElementById('billSubtotal').textContent = `৳ ${convertToBn(subtotal)}`;
+      document.getElementById('billDelivery').textContent = `৳ ${convertToBn(shippingCharge)}`;
+      document.getElementById('billGrandTotal').textContent = `৳ ${convertToBn(totalBill)}`;
+
+      const stickyPrice = document.getElementById('mobileStickyPrice');
+      if (stickyPrice) {
+        stickyPrice.textContent = `৳ ${convertToBn(totalBill)}`;
+      }
+    }
+
+    // FAQ Accordion
+    function toggleFaqAccordion(btn) {
+      const parent = btn.parentElement;
+      const isOpen = parent.classList.contains('open');
+
+      document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('open'));
+
+      if (!isOpen) {
+        parent.classList.add('open');
+      }
+    }
+
+    // Order Submission Handler
+    function handleOrderSubmission(e) {
+      e.preventDefault();
+
+      let valid = true;
+
+      // Validate Name
+      const nameInp = document.getElementById('inputName');
+      const grpName = document.getElementById('grpName');
+      if (!nameInp.value.trim()) {
+        grpName.classList.add('has-error');
+        valid = false;
+      } else {
+        grpName.classList.remove('has-error');
+      }
+
+      // Validate Phone (11 digits starting with 01)
+      const phoneInp = document.getElementById('inputPhone');
+      const grpPhone = document.getElementById('grpPhone');
+      const cleanPhone = phoneInp.value.trim().replace(/[-+ ]/g, '');
+      const bdRegex = /^01[3-9]\d{8}$/;
+
+      if (!bdRegex.test(cleanPhone)) {
+        grpPhone.classList.add('has-error');
+        valid = false;
+      } else {
+        grpPhone.classList.remove('has-error');
+      }
+
+      // Validate Address
+      const addrInp = document.getElementById('inputAddress');
+      const grpAddress = document.getElementById('grpAddress');
+      if (!addrInp.value.trim()) {
+        grpAddress.classList.add('has-error');
+        valid = false;
+      } else {
+        grpAddress.classList.remove('has-error');
+      }
+
+      if (!valid) {
+        const firstErr = document.querySelector('.form-group.has-error .form-input, .form-group.has-error .form-textarea');
+        if (firstErr) firstErr.focus();
+        return;
+      }
+
+      const pkg = allPackages[activePackageId];
+      const grandTotal = (pkg.price * orderQuantity) + shippingCharge;
+      const areaText = shippingCharge === 60 ? "ঢাকার ভেতরে (৬০৳)" : "ঢাকার বাইরে (১২০৳)";
+
+      const modalSummary = document.getElementById('modalOrderSummary');
+      modalSummary.innerHTML = `
+        ধন্যবাদ <strong>${nameInp.value.trim()}</strong>!<br><br>
+        <strong>প্যাকেজ:</strong> ${pkg.name}<br>
+        <strong>পরিমাণ:</strong> ${convertToBn(orderQuantity)} টি<br>
+        <strong>ডেলিভারি এলাকা:</strong> ${areaText}<br>
+        <strong>সর্বমোট প্রদেয়:</strong> ৳ ${convertToBn(grandTotal)} (ক্যাশ অন ডেলিভারি)<br><br>
+        আমাদের অফিশিয়াল নম্বর <strong>01996365491</strong> থেকে আপনার নম্বর <strong>${cleanPhone}</strong>-এ ফোন করে অর্ডারটি এখনই কনফার্ম করা হবে।
+      `;
+
+      document.getElementById('orderConfirmModal').classList.add('active');
+
+      // Reset Form
+      document.getElementById('orderCheckoutForm').reset();
+      orderQuantity = 1;
+      document.getElementById('qtyDisplayBox').textContent = '১';
+      setDelivery(60, 'in');
+      selectPackage(1);
+    }
+
+    function dismissModal() {
+      document.getElementById('orderConfirmModal').classList.remove('active');
+    }
+
+    // Init calculations on load
+    updateLiveReceipt();
+  </script>
+</body>
+</html>
